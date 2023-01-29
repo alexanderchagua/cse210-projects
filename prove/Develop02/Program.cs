@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
     var random = new Random();
-    var list = new List<string>{ "How was your day?", "What do you think about your job?", "que piensas de las personas que conocistes hoy?", "What did you learn from the scriptures today?",
+    var list = new List<string>{ "How was your day?", "What do you think about your job?", "What do you think of the people you met today?", "What did you learn from the scriptures today?",
                           "What thoughts about family went through your mind today?"
                            };
 
@@ -61,11 +61,18 @@ class Program
                     break;
                 case 4:
                     string filename = "journal.txt";
-                        string e = File.ReadAllText(filename);  
-                        Console.WriteLine(e);  
-                      
-                        
-                                                
+string[] lines = File.ReadAllLines(filename);
+
+foreach (string line in lines)
+{
+    string[] parts = line.Split(",");
+
+    
+}                   
+                
+            
+                
+       
                     break;
                 case 5:
                     Console.WriteLine("opcion quit");
