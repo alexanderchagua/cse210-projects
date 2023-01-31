@@ -67,7 +67,8 @@ foreach (string line in lines)
 {
     string[] parts = line.Split(",");
 
-    
+    string firstName = parts[0];
+    string lastName = parts[1];
 }                   
                 
             
