@@ -1,0 +1,21 @@
+using System;
+
+public class Rndscripture
+{
+    private string _name;
+
+    public List<Scripture> _scriture = new List<Scripture>();
+
+    public void Display()
+    {
+        Console.WriteLine($"Name: {_name}");
+
+        foreach (Scripture scripture in _scriture)
+        {
+            scripture.Display();
+        }
+    }
+    
+    }
+    
+
