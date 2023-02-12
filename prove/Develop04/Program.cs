@@ -4,7 +4,7 @@ class Program
     static void Main(string[] args){
         Console.Clear();
         Random ran = new Random();
-        string scripture = "se conoce como la vida antes de la muertes pero esto esta bien";
+        string scripture = "aqui ira la escritura";
 
 
         string[] scrip = scripture.Split(",");
@@ -23,6 +23,9 @@ class Program
             value = Console.ReadLine();
             if( value == "" || value == null ){
                 while(i<2){
+
+    
+                {
                 string randonport = asd[ran.Next(0,asd.Count())];
                 i++;};
 

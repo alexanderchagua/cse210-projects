@@ -1,14 +1,14 @@
 using System;
 
-public class Rndscripture
+public class Listscripture
 {
-    private string _name;
+  
+    private List<Scripture> _scriture = new List<Scripture>();
 
-    public List<Scripture> _scriture = new List<Scripture>();
 
     public void Display()
     {
-        Console.WriteLine($"Name: {_name}");
+    
 
         foreach (Scripture scripture in _scriture)
         {
