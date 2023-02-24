@@ -1,38 +1,51 @@
 using System;
 
-public class relaxationMethods{
-     private string _time = "";
-     private string _msgWelcome = "";
-     private string _msgFinal = "";
-    public string _animacion  = "";
+public class RelaxationMethods{
+     private DateTime _time = new DateTime();
+     private Random _RandomList = new Random();
+     private string _msgWelcome;
+     private string _msgEnd;
+    private string _animacion;
+    private object ramdom;
 
-    public string _RandomList  = "";
-
-    public relaxationMethods(string time){
-        _time = time;
+    public RelaxationMethods(string msgwelcome, string msgEnd){
+       
+        _msgWelcome = msgwelcome;
+        _msgEnd = msgEnd;
+    }
+    public string getShowWelcomeMessage(){
+        return _msgWelcome;
+    }
+    public string getShowEndMessage(){
+        return _msgEnd;
     }
 
-    public relaxationMethods(string welcome, string Final ){
-        _msgWelcome = welcome;
-        _msgFinal = Final;
 
+    public string ShowAnimation(){
+        return _animacion;
     }
-    
 
-    public  void generRndList(){
-        Random random = new Random();
-        int index = random.Next( _RandomList.Count );
-        string randomString = _RandomList[ index ];
+    public List<string> Getrlist(){
+        List<string> ramdom = new List<string>();
+       
+      return ramdom;
+    }
+ 
+     public strin tMenu(){
+        Console.WriteLine("Menu Options:");
+        Console.WriteLine("1. Start breathing  activity");
+        Console.WriteLine("2. Start reflecting activity");
+        Console.WriteLine("3. Start listing activity");
+        Console.WriteLine("4. Quit");  
+     }   
+        
+        
+        }
+
+ 
+
    
-    }
 
-    public void MensajeBienvenida(string welcome){
-        Console.WriteLine(welcome);
-    }
 
-    public void MensajeFinal(string Final){
-        Console.WriteLine(Final);
-    }
-    
 
-}
+   
